@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+
+<img src="images/Celerity-sub.png" style="float:right" title="SoC Architecture">
+
+Celerity is an accelerator-centric system-on-chip (SoC) which uses a tiered accelerator 
+fabric to improve energy efficiency in the context of high-performance embedded systems. 
+
+The SoC is a 5 × 5 mm 385 M-transistor chip in TSMC 16 nm designed and 
+implemented by a modest team of over 20 students and faculty from the University 
+of Michigan, Cornell University, and the University of California, San Diego, 
+as part of the DARPA Circuit Realization At Faster Timescales (CRAFT) program.
+
+<!-- Description for  different tiers -->
+<div align="center" style="margin-top:40px"> 
+
+<!-- Description for general  tiers -->
+<div style="width:200px;position:relative; display:inline-block;float:left">
+<img src="images/General-tier.png">
+<p align="left"> <strong> General Purpose Tier </strong></p>
+<p align="left">A few fully featured RISC-V processors 
+capable of running general-purpose software including an operating system.
+</p>
+
+</br>
+
+<!-- Source code -->
+<ul align="left">
+    <li>Rocket  : <a href="https://bitbucket.org/taylor-bsg/bsg_rocket">bsg_rocket</a>  </li>
+    <li>RoCC Doc: <a href="https://docs.google.com/document/d/1CH2ep4YcL_ojsa3BVHEW-uwcKh1FlFTjH_kg5v8bxVw/edit">RoCC Doc V2</a>  </li>
+</ul>
+
+</div>
+
+<div style="width:200px;position:relative; display:inline-block">
+<img src="images/Massive-tier.png">
+<p align="left"> <strong> Massive Parallel Tier </strong> </p>
+<p align="left">Hundreds of lightweight RISC-V processors, 
+a distributed, non- cache-coherent memory system, and a mesh-based interconnect. 
+</p>
+
+<!-- Source code -->
+<ul align="left">
+    <li>Core Array: <a href="https://bitbucket.org/taylor-bsg/bsg_manycore">bsg_manycore</a>  </li>
+    <li>IP library: <a href="https://bitbucket.org/taylor-bsg/bsg_ip_cores">bsg_ip_cores</a>  </li>
+</ul>
+
+</div>
+
+<div style="width:200px;position:relative; display:inline-block;float:right">
+<img src="images/Specialization-tier.png">
+<p align="left"> <strong> Specialization Tier </strong> </p>
+<p align="left"> Application-specific accelerators (possibly 
+generated using high-level synthesis). 
+</p>
+
+
+<!-- Source code -->
+</br>
+<ul align="left">
+    <li>BNN FPGA: <a href="https://github.com/cornell-zhang/bnn-fpga">bnn-fpga</a>  </li>
+</ul>
+
+</div>
+
+</div>
+
